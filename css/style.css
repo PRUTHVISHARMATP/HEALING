@@ -131,16 +131,7 @@ p{
         padding-left: 40px;
         
     }
-    .notice2 h2{
-        color: #5c3d99;
-        font-size: 1.8rem;
-        margin-top: 30px;
-        padding-left: 35px;
-        
-    }
-    h2{
-        padding-left: 35px;
-    }
+   
     p{
         text-align:justify;
     }
@@ -349,6 +340,16 @@ about-container {
 @media (max-width: 600px) {
     nav {
     margin-top: 10px;
+    }
+}
+@media (max-width: 480px){
+    h2, h3 {
+        text-align: center;
+        padding-left: 0;
+    }
+    .notice2 h2 {
+        text-align: center;
+        padding-left: 0;
     }
 }
 
