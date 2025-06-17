@@ -154,7 +154,7 @@ p {
 }
 
 /* Images */
-#poc{
+#poc,#poc1{
     margin: 70px auto 0;
     width: 70%;
     height: 300px;
@@ -165,19 +165,21 @@ p {
     margin-right: 15%;
 }
 #poc {
-    width: 70%;
-    height: 300px;
-    border-radius: 20px;
     margin-left: 15%;
     margin-right: 15%;
 }
 
 @media (max-width: 480px) {
-    #poc1, #poc {
+    #poc1{
         width: 80%;
         height: 250px;
         margin-left: 10%;
         margin-right: 10%;
+    }
+    #poc{
+         width: 100%;
+         height: 250px;
+         border-radius: 20px;
     }
 }
 
