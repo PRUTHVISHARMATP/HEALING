@@ -198,12 +198,20 @@ p{
         margin-right: 15%;
     } 
     #poc {
-        margin: 70px auto 0 auto;  /* top margin and horizontal centering */
+        margin-top: 70px;  /* top margin and horizontal centering */
         width: 80%;
         height: 280px;
         border-radius: 20px;
         margin-left: 10%;
         margin-right: 10%;
+    }
+      h2, h3 {
+         text-align: center;
+         margin-right:10%;
+    }
+    .notice2 h2 {
+         text-align: center;
+         margin: 0 auto;
     }
 }    
 
@@ -219,7 +227,6 @@ about-container {
     margin-bottom: 20px;
     color: #5c3d99;
     text-align: center;
-    margin: 0 auto;
 }
 
 .about-container p {
@@ -235,7 +242,6 @@ about-container {
     margin-bottom: 20px;
     color: #5c3d99;
     text-align: center;
-    margin: 0 auto;
 }
 .info1 p {
     font-size: 1.0rem;
@@ -346,16 +352,6 @@ about-container {
 @media (max-width: 600px) {
     nav {
     margin-top: 10px;
-    }
-}
-@media (max-width: 480px){
-    h2, h3 {
-         text-align: center;
-         margin: 0 auto;
-    }
-    .notice2 h2 {
-         text-align: center;
-         margin: 0 auto;
     }
 }
 
