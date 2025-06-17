@@ -202,8 +202,8 @@ p{
         width: 70%;
         height: 280px;
         border-radius: 20px;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }    
 
@@ -218,6 +218,8 @@ about-container {
     font-size: 30px;
     margin-bottom: 20px;
     color: #5c3d99;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .about-container p {
@@ -232,6 +234,8 @@ about-container {
     font-size: 30px;
     margin-bottom: 20px;
     color: #5c3d99;
+    text-align: center;
+    margin: 0 auto;
 }
 .info1 p {
     font-size: 1.0rem;
@@ -310,6 +314,8 @@ about-container {
     margin-bottom: 10px;
     color: #444;
     padding-left: 10px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .contact-info {
@@ -344,12 +350,12 @@ about-container {
 }
 @media (max-width: 480px){
     h2, h3 {
-        text-align: center;
-        padding-left: 0;
+         text-align: center;
+         margin: 0 auto;
     }
     .notice2 h2 {
-        text-align: center;
-        padding-left: 0;
+         text-align: center;
+         margin: 0 auto;
     }
 }
 
