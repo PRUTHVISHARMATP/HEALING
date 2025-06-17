@@ -199,11 +199,11 @@ p{
     } 
     #poc {
         margin: 70px auto 0 auto;  /* top margin and horizontal centering */
-        width: 70%;
+        width: 80%;
         height: 280px;
         border-radius: 20px;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }    
 
