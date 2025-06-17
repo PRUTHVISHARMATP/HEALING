@@ -133,9 +133,9 @@ p {
     }
 
     h2, .notice2 h2, h3 {
-        text-align: center;
-        padding-right: 20px;
-        padding-left: 25px;
+        text-align: justify;
+        margin-right:20%;
+        margin-left:20%;
     }
 }
 
