@@ -1,192 +1,282 @@
-
-/* Navbar */
 .navbar {
-    background-color: #f7dcbc;
+    background-color:#f7dcbc; 
     height: 60px;
 }
-.navbar a {
+.navbar a{
     color: #444242;
 }
 
-/* Logo */
 #logo-img {
     height: 60px;
     width: auto;
-    display: block;
     margin: 0;
     padding: 0;
+    display: block;
 }
 
-/* Generic Image */
-img {
+img{
     margin-top: 60px;
     width: 100%;
     height: 300px;
 }
 
-/* Notice Section */
 .notice-img {
     width: 90%;
     height: 350px;
-    margin: 20px auto 0 auto;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
-.notice {
+.notice{
     display: flex;
+
 }
-.notice1 {
+.notice1{
     width: 30%;
     padding-bottom: 20px;
 }
-.notice2 {
+.notice2{
     width: 70%;
 }
-.notice2 p,
-.notice2 h2 {
+.notice2 p{
     padding-left: 5px;
 }
-
-/* Headings & Paragraphs */
-h2, h3 {
+.notice2 h2{
     color: #5c3d99;
     font-size: 1.8rem;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    padding-left: 5px;
+}
+h2{
+    color: #5c3d99;
+    font-size: 1.8rem;
+    padding-bottom: 5px;
     margin-top: 30px;
     padding-left: 50px;
 }
-p {
-    font-size: 1rem;
-    padding: 0 50px;
-    text-align: justify;
+h3{
+    color: #5c3d99;
+    font-size: 1.8rem;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+p{
+    font-size: 1.0rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align:justify;
+}
+.chakra-list ul {
+    padding-left: 55px;
 }
 
-/* Chakra List */
-.chakra-list ul,
 .chakra-list ol {
     padding-left: 55px;
 }
+
 .chakra-list li {
     margin-bottom: 15px;
     padding-right: 50px;
     text-align: justify;
 }
+
 .chakra-list strong {
     color: #993399;
 }
 
-/* Blog Section */
+
+@media (max-width: 480px){
+    .navbar{
+        margin-top: 0%;
+        height: 60px;
+    }
+
+    #logo-img {
+        height: 40px;
+        width: auto;
+        margin-top: 0%;
+        padding: 0;
+        display: block;
+    }
+
+    img{
+        margin-top: 60px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .notice-img {
+        width: 70%;
+        height: 250px;
+        margin-top: 30px;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: block;
+    }
+    .notice{
+        display: block;
+    
+    }
+    .notice1{
+        width: 100%;
+        padding-bottom: 10px;     
+    }
+    .notice2{
+        width: 100%;
+        
+    }
+    .notice2 p{
+        padding-left: 40px;
+        
+    }
+    .notice2 h2{
+        color: #5c3d99;
+        font-size: 1.8rem;
+        margin-top: 30px;
+        padding-left: 35px;
+        
+    }
+    h2{
+        padding-left: 35px;
+    }
+    p{
+        text-align:justify;
+    }
+    .chakra-list li {
+        margin-bottom: 15px;
+        padding-right: 50px;
+        text-align: justify;
+    }
+    .blogs1{
+        display: block;
+        margin-top: 30px;
+    }
+    .card{
+        height: auto;
+        width: 30rem;
+    }
+
+
+}
 .blogs1 {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 30px 20px;
-}
-.card {
-    width: 30rem;
-    height: auto;
+    flex-direction: row;
+    gap: 20px; /* adds space between cards */
+    justify-content: center; /* center horizontally */
+    flex-wrap: wrap; /* wrap on smaller screens */
+    margin: 20px;
+    margin-top: 30px;
 }
 
-/* Images with Rounded Corners */
-#poc, #poc1 {
+.card{
+    height: auto;
+    width: 30rem;
+}
+
+#poc {
+    margin: 70px auto 0 auto;  /* top margin and horizontal centering */
     width: 70%;
     height: 300px;
-    margin: 70px auto 0 auto;
     border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-#p1 {
+
+#p1{
     margin-top: 20px;
 }
 
-/* About Section */
-.about-container{
-    text-align:left;
-    padding-left:35px;
+#poc1 {
+    margin: 70px auto 0 auto;  /* top margin and horizontal centering */
+    width: 70%;
+    height: 300px;
+    border-radius: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
-.info1 {
+
+@media (max-width: 480px){
+    #poc1 {
+        margin: 70px auto 0 auto;  /* top margin and horizontal centering */
+        width: 70%;
+        height: 250px;
+        border-radius: 20px;
+        margin-left: 15%;
+        margin-right: 15%;
+    } 
+    #poc {
+        margin: 70px auto 0 auto;  /* top margin and horizontal centering */
+        width: 70%;
+        height: 280px;
+        border-radius: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}    
+
+.about-container {
+    padding: 40px 20px;
     max-width: 1000px;
     margin: auto;
-    padding: 40px 20px;
 }
-.about-container h2,
-.info1 h2 {
+
+.about-container h2 {
+    margin-top:70px;
     font-size: 30px;
-    margin: 70px 0 20px 0;
+    margin-bottom: 20px;
     color: #5c3d99;
 }
-.about-container p,
-.info1 p {
-    font-size: 1rem;
-    padding: 0 50px;
-    text-align: justify;
+
+.about-container p {
+    font-size: 1.0rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align:justify;
 }
 
-/* Contact Section */
-.contact-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-.contact-container img.profile {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #e3b176;
+.info1 h2 {
+    margin-top:70px;
+    font-size: 30px;
     margin-bottom: 20px;
+    color: #5c3d99;
 }
-.contact-container h2 {
-    color: #444;
-    margin-bottom: 10px;
-    padding-left: 10px;
-}
-.contact-info {
-    margin: 20px 0;
-    line-height: 1.6;
-}
-.contact-info a {
-    color: #444;
-    text-decoration: none;
-}
-.social-links {
-    margin-top: 20px;
-}
-.social-links a {
-    margin: 0 10px;
-    font-size: 28px;
-    color: #e3b176;
-    transition: transform 0.3s ease;
-}
-.social-links a:hover {
-    transform: scale(1.2);
+.info1 p {
+    font-size: 1.0rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align:justify;
 }
 
-/* WhatsApp Floating Button */
 .whatsapp-btn-container {
     position: fixed;
     right: 30px;
-    bottom: -40px;
     opacity: 0;
+    bottom: -40px;
     padding: 24px;
     animation: fade-up 1000ms forwards;
     animation-delay: 1000ms;
 }
+
 @keyframes fade-up {
-    to {
+    100% {
         bottom: 20px;
         opacity: 1;
     }
 }
+
 .whatsapp-btn-container .whatsapp-btn {
     font-size: 48px;
     color: #25d366;
+    display: inline-block;
     transition: all 400ms;
 }
+
 .whatsapp-btn-container .whatsapp-btn:hover {
     transform: scale(1.2);
 }
+
 .whatsapp-btn-container span {
     position: absolute;
     top: 0;
@@ -198,76 +288,68 @@ p {
     opacity: 0;
     transition: all 400ms;
 }
+
 .whatsapp-btn-container .whatsapp-btn:hover + span {
     transform: rotateZ(0deg) translateX(0px);
     opacity: 1;
 }
 
-/* Responsive for Mobile */
-@media (max-width: 480px) {
-    .navbar {
-        height: 60px;
-    }
 
-    #logo-img {
-        height: 40px;
-    }
 
-    img {
-        height: 150px;
-    }
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-    .notice {
-        display: block;
-    }
-    .notice1, .notice2 {
-        width: 100%;
-    }
-    .notice-img {
-        width: 70%;
-        height: 250px;
-        margin: 30px auto;
-        display: block;
-    }
+.contact-container img.profile {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #e3b176;
+}
 
-    .notice2 p {
-        padding-left: 40px;
-    }
-    .notice2 h2 {
-        padding-left: 0;
-        text-align: center;
-    }
+.contact-container h2 {
+    margin-bottom: 10px;
+    color: #444;
+    padding-left: 10px;
+}
 
-    h2 {
-        padding-left: 0;
-        text-align: center;
-    }
+.contact-info {
+    margin: 20px 0;
+    line-height: 1.6;
+}
 
-    p {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+.contact-info a {
+    color: #444;
+    text-decoration: none;
+}
 
-    .chakra-list li {
-        padding-right: 30px;
-    }
+.social-links {
+    margin-top: 20px;
+}
 
-    .blogs1 {
-        display: block;
-        margin-top: 30px;
-    }
-    .card {
-        width: 90%;
-        margin: auto;
-    }
+.social-links a {
+    margin: 0 10px;
+    font-size: 28px;
+    color: #e3b176;
+    transition: transform 0.3s ease;
+}
 
-    #poc, #poc1 {
-        width: 70%;
-        height: 250px;
-        margin: 70px auto 0 auto;
-    }
+.social-links a:hover {
+    transform: scale(1.2);
+}
 
+@media (max-width: 600px) {
     nav {
-        margin-top: 10px;
+    margin-top: 10px;
     }
 }
+
+
