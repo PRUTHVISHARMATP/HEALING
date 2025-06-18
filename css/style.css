@@ -216,42 +216,6 @@ p{
     }
     
 }   
-@media (max-width: 480px) {
-    .about-container {
-        padding: 40px 20px;
-    }
-
-    .about-container h2 {
-        text-align: center;
-    }
-}
-
-
-.about-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 60px 40px;
-}
-
-/* Heading: Always aligned to the left */
-.about-container h2 {
-    font-size: 2rem;
-    color: #5c3d99;
-    margin: 40px 0 20px 0;
-    text-align: left;
-    padding-left:35px;
-}
-
-/* Paragraph: Left-aligned and well-spaced */
-.about-container p {
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 20px;
-    padding-left:35px;
-}
-
-
 .info1 h2 {
     margin-top:70px;
     font-size: 30px;
