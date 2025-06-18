@@ -97,7 +97,10 @@ p {
 }
 
 /* About Section */
-.about-container,
+.about-container{
+    text-align:left;
+    padding-left:35px;
+}
 .info1 {
     max-width: 1000px;
     margin: auto;
