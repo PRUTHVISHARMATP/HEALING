@@ -135,13 +135,18 @@ p{
         color: #5c3d99;
         font-size: 1.8rem;
         margin-top: 30px;
-        padding-left: 30px;
-        text-align: centre;
-        
+        text-align: center;
+        width: 100%;
+        display: block;
+        word-break: break-word;
+
+
     }
     h2{
-        text-align: centre;
-        padding-left: 30px;
+      text-align: center;
+      width: 100%;
+      display: block;
+      word-break: break-word;
     }
     p{
         text-align:justify;
@@ -224,7 +229,9 @@ p{
     margin-bottom: 20px;
     color: #5c3d99;
     text-align: centre;
-    padding-left:30px;
+    width: 100%;
+    display: block;
+    word-break: break-word;
 }
 .info1 p {
     font-size: 1.0rem;
