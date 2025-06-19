@@ -1,5 +1,5 @@
 body {
-    padding-top: 60px; /* Try reducing this from 80px to 60px or lower */
+    padding-top: 35px; /* Try reducing this from 80px to 60px or lower */
 }
 /* ========== Navbar ========== */
 .navbar {
@@ -35,7 +35,7 @@ body {
     color: #5c3d99;
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 20px;
+     margin-top: 10px;
     margin-bottom: 20px;
     padding: 0 15px;
     word-break: break-word;
@@ -70,11 +70,11 @@ body {
 /* ========== Info Section Box ========== */
 .info1 {
     background-color: #fff0e0;
-    padding: 30px 20px;
     border-left: 5px solid #d1a65c;
-    margin: 30px auto;
     max-width: 950px;
     border-radius: 8px;
+    margin: 10px auto 30px auto;
+    padding: 25px 20px;
 }
 
 .info1 h2 {
