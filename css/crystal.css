@@ -1,4 +1,6 @@
-
+body {
+    padding-top: 60px; /* Try reducing this from 80px to 60px or lower */
+}
 /* ========== Navbar ========== */
 .navbar {
     background: linear-gradient(to right, #fde3bf, #e0bd8f);
