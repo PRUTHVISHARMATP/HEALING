@@ -145,6 +145,8 @@ body {
         font-size: 12px;
     }
 }
-h2,strong{
-    color: #7b4c94;
+h2 {
+  color: #7b4c94;
+  text-align: center;
 }
+
