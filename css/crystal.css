@@ -57,7 +57,8 @@ body {
     padding: 0 20px;
 }
 
-.chakra-list ul {
+.chakra-list ul,
+.chakra-list ol{
     list-style-type: disc;
     padding-left: 25px;
 }
