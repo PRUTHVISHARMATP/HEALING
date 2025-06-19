@@ -1,5 +1,7 @@
 .navbar {
-    background-color:#f7dcbc; 
+     background: linear-gradient(to right, #fde3bf, #e0bd8f);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 10px 20px;
     height: 60px;
 }
 .navbar a{
