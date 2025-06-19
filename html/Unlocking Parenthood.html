@@ -19,17 +19,19 @@
     text-align: center;
   }
 
-  ol, ul {
-    padding-left: 0;
-    margin-left: 0;
-    list-style-position: inside;
-  }
+ol {
+  list-style-position: outside;
+  padding-left: 0;
+  margin-left: 0;
+}
 
-  li {
-    margin-bottom: 10px;
-    text-align: justify;
-    padding-left: 0;
-  }
+ol li {
+  text-align: justify;
+  margin-bottom: 10px;
+  padding-left: 1.4em; /* Adjust spacing so text lines up neatly under numbers */
+  text-indent: -1.4em;  /* Pull the first line left to align with numbers */
+}
+
 </style>
 
 
