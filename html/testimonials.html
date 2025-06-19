@@ -1,123 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESTIMONIALS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PRUTHVISHARMATP/HEALING/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonials</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PRUTHVISHARMATP/HEALING/css/crystal.css"/>
+
+  <style>
+    h2 {
+      color: #7b4c94;
+      text-align: center;
+    }
+    .testimonial-title {
+      text-decoration: underline;
+      color: blue;
+      font-style: italic;
+      font-size: 1.25rem;
+      margin-bottom: .5rem;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-sm fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img id="logo-img" src="\img\logo.png"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars" style="color: #4a4a4a;"></i>
+      <a class="navbar-brand" href="#"><img id="logo-img" src="/img/logo.png" alt="Logo"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <i class="fa-solid fa-bars text-dark"></i>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">TESTIMONIALS</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title">Testimonials</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a style="color: #4a4a4a;"  class="nav-link active" aria-current="page" href="https://shubhaenergyhealing.in\">Home</a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="https://shubhaenergyhealing.in/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://shubhaenergyhealing.in/html/aboutme.html">About Me</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/physical-healing.html">Physical Healing</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/emotional-healing.html">Emotional Healing</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/relationship-healing.html">Relationship Healing</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/trauma.html">Trauma Healing</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/financial.html">Financial Healing</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/career-healing.html">Career Healing</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/Crystal-Healing.html">Crystal Healing</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/panic.html">Pranic Feng Shui</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/stress.html">Stress Management</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/spiritual.html">Spiritual Healing</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/children-healing.html">Healing for Children</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-                <a style="color: #4a4a4a;"  class="nav-link active" aria-current="page" href="https://shubhaenergyhealing.in\html\aboutme.html">About-me</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Services
-                </a>
-                <ul style="background: linear-gradient(to bottom, #e0bd8f 0%, #fde3bf 100%); margin-top: 20px;" class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in\html\physical-healing.html">Physical Healing</a></li>
-                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in\html\emotional-healing.html">Emotional Healing</a></li>
-                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in\html\relationship-healing.html">Relationship Healing</a></li>
-                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in\html\trauma.html">Trauma Healing</a></li>
-                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in\html\financial.html">Financial Healing</a></li>
-                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in\html\career-healing.html">Career Healing</a></li>
-                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in\html\Crystal-Healing.html">Crystal Healing</a></li>
-                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in\html\panic.html">Pranic Feng Shui</a></li>
-                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in\html\stress.html">Stress Management</a></li>
-                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in\html\spiritual.html">Spiritual Healing</a></li>
-                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in\html\children-healing.html">Healing for Children</a></li>
-                </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Certified Courses</a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/basic.html">Basic Healing</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/advanced.html">Advanced Healing</a></li>
+                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/Psychotherpy.html">Energy Psychotherapy</a></li>
+              </ul>
             </li>
-                 <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Certified Courses</a>
-                            <ul style="background: linear-gradient(to bottom, #e0bd8f 0%, #fde3bf 100%); margin-top: 20px;" class="dropdown-menu">
-                                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/basic.html">Basic healing</a></li>
-                                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/advanced.html">Advanced Healing</a></li>
-                                <li><a class="dropdown-item" href="https://shubhaenergyhealing.in/html/Psychotherpy.html">Energy Psychotherpy</a></li>
-                            </ul>
-                        </li>
-              <li class="nav-item">
-                <a style="color: #4a4a4a;" class="nav-link active" aria-current="page" href="https://shubhaenergyhealing.in\html\contact.html">Contact</a>
-              </li>
-          
+            <li class="nav-item"><a class="nav-link" href="https://shubhaenergyhealing.in/html/contact.html">Contact</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </nav>
-  <div class="info1">
-    <h2>💬 Testimonials</h2>
-</div>
-<p>Real stories from individuals who have experienced deep transformation through Energy Healing.</p>
-<div class="chakra-list">
-    <h2 style="text-decoration: underline; color:blue; font-style: italic;">Naresh K P –<span style="font-size: 0.8em;"> Sr. Manager</span></h2>
-    
-    <h3>🧠 Emotional Experience</h3>
-    <p>I came across Energy Healing during a really tough time in my life. I was emotionally drained, constantly tired, and overwhelmed by stress. I wasn’t sure what to expect, but something about it felt worth trying.</p>
-    
-    <h3>🛌 Physical Changes</h3>
-    <p>After just a few sessions, I noticed I was sleeping better, my mind felt calmer, and I had more energy during the day. What surprised me the most was how gentle and peaceful the whole process was — yet it made such a big difference.</p>
 
-    <h3>💗 Inner Shift</h3>
-    <p>Over time, I experienced a deep emotional shift. It felt like a heavy weight I’d been carrying had started to lift. The space felt safe and supported throughout the journey.</p>
+  <!-- Main Content -->
+  <main class="container py-5 mt-5">
 
-    <h3>🙏 Gratitude</h3>
-    <p>Energy Healing has helped me feel more balanced and positive, both mentally and physically. I’m truly grateful I found it — it’s made a big difference in my life.</p>
-</div>
+    <section class="section-content text-center">
+      <h2>💬 Testimonials</h2>
+      <p>Real stories from individuals who have experienced deep transformation through Energy Healing.</p>
+    </section>
 
-<div class="chakra-list">
-    <h2 style="text-decoration: underline; color: blue; font-style: italic;">Mrs. Divya Venugopal –<span style="font-size: 0.8em;">Homemaker</span></h2>
-    
-    <h3>🧠 Emotional Experience</h3>
-    <p>My journey with Healing has been nothing short of transformative. I was dealing with chronic stress, emotional exhaustion, and a sense of imbalance. While other approaches helped a little, it was Energy Healing that brought deep and lasting change.</p>
-    
-    <h3>⚡ Physical Changes</h3>
-    <p>Through regular sessions and self-practice, I felt lighter, more focused, and emotionally grounded. My fatigue turned into vitality, and I could sense clarity throughout the day.</p>
+    <!-- Naresh K P -->
+    <section class="section-content">
+      <div class="chakra-list">
+        <h2 class="testimonial-title">Naresh K P – <span style="font-size:0.8em;">Sr. Manager</span></h2>
+        <h3>🧠 Emotional Experience</h3>
+        <p>I came across Energy Healing during a really tough time in my life. I was emotionally drained, constantly tired, and overwhelmed by stress. I wasn’t sure what to expect, but something about it felt worth trying.</p>
+        <h3>🛌 Physical Changes</h3>
+        <p>After just a few sessions, I noticed I was sleeping better, my mind felt calmer, and I had more energy during the day. What surprised me the most was how gentle and peaceful the whole process was — yet it made such a big difference.</p>
+        <h3>💗 Inner Shift</h3>
+        <p>Over time, I experienced a deep emotional shift. It felt like a heavy weight I’d been carrying had started to lift. The space felt safe and supported throughout the journey.</p>
+        <h3>🙏 Gratitude</h3>
+        <p>Energy Healing has helped me feel more balanced and positive, both mentally and physically. I’m truly grateful I found it — it’s made a big difference in my life.</p>
+      </div>
+    </section>
 
-    <h3>🌺 Spiritual & Inner Shift</h3>
-    <p>Healing helped me release long-held emotional patterns and reawaken a sense of spiritual connection I had completely lost. It showed me that healing is not just about the body—it’s about nurturing the soul and aligning with higher energies.</p>
+    <!-- Mrs. Divya Venugopal -->
+    <section class="section-content">
+      <div class="chakra-list">
+        <h2 class="testimonial-title">Mrs. Divya Venugopal – <span style="font-size:0.8em;">Homemaker</span></h2>
+        <h3>🧠 Emotional Experience</h3>
+        <p>My journey with Healing has been nothing short of transformative. I was dealing with chronic stress, emotional exhaustion, and a sense of imbalance. While other approaches helped a little, it was Energy Healing that brought deep and lasting change.</p>
+        <h3>⚡ Physical Changes</h3>
+        <p>Through regular sessions and self-practice, I felt lighter, more focused, and emotionally grounded. My fatigue turned into vitality, and I could sense clarity throughout the day.</p>
+        <h3>🌺 Spiritual & Inner Shift</h3>
+        <p>Healing helped me release long-held emotional patterns and reawaken a sense of spiritual connection I had completely lost. It showed me that healing is not just about the body—it’s about nurturing the soul and aligning with higher energies.</p>
+        <h3>🙏 Gratitude</h3>
+        <p>I am incredibly grateful to Shubha for guiding me through this process. It has truly changed how I think and respond to life. I wholeheartedly recommend it to anyone seeking healing and deeper self-understanding. Thank you, Shubha, for being there for me always. 😊😊</p>
+      </div>
+    </section>
 
-    <h3>🙏 Gratitude</h3>
-    <p>I am incredibly grateful to Shubha for guiding me through this process. It has truly changed how I think and respond to life. I wholeheartedly recommend it to anyone seeking healing and deeper self-understanding.</p>
-    <p>Thank you, Shubha, for being there for me always. 😊😊</p>
-</div>
+    <!-- Padmashree Diwakar -->
+    <section class="section-content">
+      <div class="chakra-list">
+        <h2 class="testimonial-title">Padmashree Diwakar – <span style="font-size:0.8em;">Staff Technical Product Manager at GE Healthcare</span></h2>
+        <h3>My journey with Pranic Healing—through the Basic, Advanced, and Psychotherapy courses</h3>
+        <p>It has been nothing short of exhilarating and deeply enlightening. Each level of training has helped me uncover powerful insights into the human energy system and how our physical, emotional, and mental bodies are interconnected and in need of regular healing and balance.</p>
+        <p>The healing sessions I received, guided with immense care and patience by Shubha, were profoundly transformative. She ensured that the sessions were done only when I felt comfortable, which helped me build trust and experience the healing process at a deeper level. These sessions not only supported my emotional and physical well-being but also opened a new dimension of self-awareness for me.</p>
+        <p>I’ve begun to understand my own behavioural patterns better—why certain reactions emerge in specific situations—and, more importantly, how to consciously regulate my emotional responses. This has brought in a sense of clarity, balance, and calmness in how I respond to life’s everyday challenges.</p>
+        <p>I’m truly grateful for the healing, the teachings, and the gentle yet powerful way in which this knowledge has been passed on. It’s a journey I will always cherish, and I highly recommend it to anyone seeking holistic well-being and inner transformation. Thank you, Shubha, for being there for me always.</p>
+      </div>
+    </section>
 
-    <div class="chakra-list">
-    <h2 style="text-decoration: underline; color: blue; font-style: italic;">Padmashree Diwakar –<span style="font-size: 0.8em;">Staff Technical Product Manager working at GE Healthcare</span></h2>
-    
-    <h3>My journey with Pranic Healing—through the Basic, Advanced, and Psychotherapy courses</h3>
-    <p>It has been nothing short of exhilarating and deeply enlightening. Each level of training has helped me uncover powerful insights into the human energy system and how our physical, emotional, and mental bodies are interconnected and in need of regular healing and balance.</p>
-    
-    <p>The healing sessions I received, guided with immense care and patience by Shubha, were profoundly transformative. She ensured that the sessions were done only when I felt comfortable, which helped me build trust and experience the healing process at a deeper level. These sessions not only supported my emotional and physical well-being but also opened a new dimension of self-awareness for me.</p>
+  </main>
 
-    <p>I’ve begun to understand my own behavioural patterns better—why certain reactions emerge in specific situations—and, more importantly, how to consciously regulate my emotional responses. This has brought in a sense of clarity, balance, and calmness in how I respond to life’s everyday challenges.</p>
+  <!-- WhatsApp Contact Button -->
+  <div class="whatsapp-btn-container">
+    <a class="whatsapp-btn" href="https://wa.me/919886695225" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <span>Contact Us</span>
+  </div>
 
-    <p>I’m truly grateful for the healing, the teachings, and the gentle yet powerful way in which this knowledge has been passed on. It’s a journey I will always cherish, and I highly recommend it to anyone seeking holistic well-being and inner transformation.</p>
-    <p>Thank you, Shubha, for being there for me always.</p>
-</div>
-     <div class="whatsapp-btn-container">
-            <a class="whatsapp-btn" href="https://wa.me/919886695225"><i class="fab fa-whatsapp"></i></a>
-            <span>Contact Us</span>
-        </div>
-
-
-  </body>
-  </html>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
