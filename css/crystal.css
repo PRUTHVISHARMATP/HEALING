@@ -150,4 +150,17 @@ h2 {
   color: #7b4c94;
   text-align: center;
 }
+.page-content {
+    padding-top: 1rem;  /* equivalent to py-1 */
+    padding-bottom: 1.5rem; /* keep as needed, or adjust */
+    margin-top: 0rem;       /* removes extra space */
+}
+
+@media (max-width: 768px) {
+    .page-content {
+        padding-top: 0.75rem;
+        margin-top: 0.5rem;
+    }
+}
+
 
