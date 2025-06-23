@@ -88,32 +88,47 @@ body {
 /* ========== WhatsApp Button ========== */
 .whatsapp-btn-container {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-align: center;
-    z-index: 1000;
+    right: 30px;
+    opacity: 0;
+    bottom: -40px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
 }
 
-.whatsapp-btn {
+@keyframes fade-up {
+    100% {
+        bottom: 20px;
+        opacity: 1;
+    }
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 48px;
+    color: #25d366;
     display: inline-block;
-    background-color: #25d366;
-    color: white;
-    font-size: 28px;
-    padding: 12px 16px;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
+    transition: all 400ms;
 }
 
-.whatsapp-btn:hover {
-    background-color: #1ebd5a;
+.whatsapp-btn-container .whatsapp-btn:hover {
+    transform: scale(1.2);
 }
 
 .whatsapp-btn-container span {
-    display: block;
-    font-size: 14px;
-    color: #444;
-    margin-top: 5px;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover + span {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
 }
 
 /* ========== Responsive Design ========== */
